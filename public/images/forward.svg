@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+     version="1.0" width="500px" height="600px" viewBox="-500, -600 ,1000, 1200" >
+  <polygon  style="stroke:none; fill:#000000;" 
+    points="100,600 100,-200  500,200 500,-100  0,-600  -500,-100 -500,200 -100,-200 -100,600 " /> <!-- arrow up -->
+</svg>

@@ -1,0 +1,40 @@
+* {
+	margin:0;
+	padding:0;
+}
+html, body, #container {
+	height:100%;
+}
+#top, #bottom {
+	width: 486px;
+	height: 170px;
+}
+#top, #bottom {
+	margin:auto;
+}
+#top div, #bottom div {
+	margin:5px;
+	background-size: 50%;
+	width:25%;
+	height:150px;
+	float:left;
+	border: 1px solid black;
+}
+#left-forward {
+	background: url(images/left-forward.svg) no-repeat 50%;
+}
+#forward {
+	background: url(images/forward.svg) no-repeat 50%;
+}
+#right-forward {
+	background: url(images/right-forward.svg) no-repeat 50%;
+}
+#left-backward {
+	background: url(images/left-backward.svg) no-repeat 50%;
+}
+#backward {
+	background: url(images/backward.svg) no-repeat 50%;
+}
+#right-backward {
+	background: url(images/right-backward.svg) no-repeat 50%;
+}
