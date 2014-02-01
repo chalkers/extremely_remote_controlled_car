@@ -44,10 +44,10 @@ function keyboardControl(e) {
 		lastDirectionKeyPressed = keys.down;
 		move(serial.backward);
 	} else if(e.keyCode == keys.left) {
-		if(lastDirectionKeyPressed == keys.up)				move(serial.forwardLeft);
+		if(lastDirectionKeyPressed == keys.up)		move(serial.forwardLeft);
 		else if(lastDirectionKeyPressed == keys.down)	move(serial.backwardLeft);
 	} else if(e.keyCode ==	keys.right) {
-		if(lastDirectionKeyPressed == keys.up)				move(serial.forwardRight);
+		if(lastDirectionKeyPressed == keys.up)		move(serial.forwardRight);
 		else if(lastDirectionKeyPressed == keys.down)	move(serial.bacwardRight);
 	}
 }
@@ -63,13 +63,13 @@ function driveWithMotion(event){
 		gyroLimits.left = - 1;
 		gyroLimits.right = 1;
 		if(x < gyroLimits.left) {
-			if(y > gyroLimits.forward)				move(serial.forwardLeft);
+			if(y > gyroLimits.forward)		move(serial.forwardLeft);
 			else if(y < gyroLimits.backward)	move(serial.backwardLeft);
 		} else if(x > gyroLimits.right) {
-			if(y > forward) 									move(serial.forwardRight);
+			if(y > forward)				move(serial.forwardRight);
 			else if(y < gyroLimits.backward)	move(serial.bacwardRight);
 		} else {
-			if(y > gyroLimits.forward)				move(serial.forward);
+			if(y > gyroLimits.forward)		move(serial.forward);
 			else if(y < gyroLimits.backward)	move(serial.backward);
 			else stop();
 		}
@@ -87,11 +87,11 @@ function updateGamePadState() {
 		var minus = 0x00000004;
 		var buttonConst = 0x7f86fffc;
 		if(state.hold & plus & buttonConst) {
-			if(x < gyroLimits.left) 				move(serial.forwardLeft);
+			if(x < gyroLimits.left) 	move(serial.forwardLeft);
 			else if(x > gyroLimits.right) 	move(serial.forwardRight);
 			else														move(serial.forward);
 		} else if(state.hold & minus & buttonConst) {
-			if(x < gyroLimits.left) 				move(serial.backwardLeft);
+			if(x < gyroLimits.left) 	move(serial.backwardLeft);
 			else if(x > gyroLimits.right) 	move(serial.bacwardRight);
 			else														move(serial.backward);
 		} else stop();
