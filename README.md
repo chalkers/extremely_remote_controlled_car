@@ -1,9 +1,9 @@
 Extremely Remote Controlled Car
 ===============================
 
-This is the Node.js component to control an Arduino via serial port via a web interface. 
+This is the Node.js component to control an Arduino via serial port via a web interface.
 
-Desktop, Wii U Gamepad and iDevice support.
+Desktop (Mouse & Keyboard), Wii U Gamepad and iDevice support.
 
 To see the Arduino component to this project visit https://github.com/chalkers/serial_port_controlled_car
 
